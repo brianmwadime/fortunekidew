@@ -3085,8 +3085,10 @@ h1 span.typed {
  height: 200px;
  text-align: center;
  background-size: cover;
- display: block;
+ margin:10px auto;
  border-radius: 100px;
  -webkit-border-radius: 100px;
  -moz-border-radius: 100px;
 }
+
+.team-links{margin:10px auto; color:#8AC06E;}
