@@ -98,11 +98,11 @@ $(function() {
 });
 
 if (jQuery) (function() {
-    $.extend($.fn, {
-        scrollTo: function(cb) {
-            $('html, body').animate({
-                scrollTop: (parseInt($(this).offset().top) - 72)
-            }, 500, cb);
-        }
-    });
+    // $.extend($.fn, {
+    //     scrollTo: function(cb) {
+    //         $('html, body').animate({
+    //             scrollTop: (parseInt($(this).offset().top) - 72)
+    //         }, 500, cb);
+    //     }
+    // });
 })(jQuery);
