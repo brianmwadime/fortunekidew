@@ -13,6 +13,8 @@ $(function() {
         backDelay: 700
     });
 
+    $("#slider").slippry();
+
     if($("#pricing-section").length > 0 && window.location.hash && window.location.hash === "#pricing-section") {
         $("#pricing-section").scrollTo();
     }
