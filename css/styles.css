@@ -1349,7 +1349,8 @@ header, footer, section, blockquote {
 section.center h1, section.center h2, section.center h3, section.center h4, section.center h5, section.center h6, section.center p.big, section header.center h1, section header.center h2, section header.center h3, section header.center h4, section header.center h5, section header.center h6, section header.center p.big {
   max-width: 650px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  color: #8ac06e; }
 
 .magic-align-con {
   -webkit-box-sizing: border-box;
