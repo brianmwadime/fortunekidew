@@ -44,9 +44,9 @@ $(function() {
     // });
 
     $(".link-overview-video").on("click", function() {
-        if(typeof ga !== "undefined") {
-            ga('send', 'event', 'Overview Video', 'Click', 'Click on overview video');
-        }
+        // if(typeof ga !== "undefined") {
+        //     ga('send', 'event', 'Overview Video', 'Click', 'Click on overview video');
+        // }
 
         if($("#overview-video").length === 0) {
             $(".modal-container").slideDown(350, function() {
@@ -56,9 +56,9 @@ $(function() {
     });
 
     $(".link-do-video").on("click", function() {
-        if(typeof ga !== "undefined") {
-            ga('send', 'event', 'Import DigitalOcean Servers Video', 'Click', 'Click on import servers from DigitalOcean video');
-        }
+        // if(typeof ga !== "undefined") {
+        //     ga('send', 'event', 'Import DigitalOcean Servers Video', 'Click', 'Click on import servers from DigitalOcean video');
+        // }
 
         if($("#overview-video").length === 0) {
             $(".modal-container").slideDown(350, function() {

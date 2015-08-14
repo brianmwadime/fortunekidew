@@ -421,6 +421,16 @@
   <script type="text/javascript" crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" crossorigin="anonymous" src="js/vendor.min.js"></script>
   <script type="text/javascript" crossorigin="anonymous" src="js/main.js?v=33"></script>
-
+  <script type="text/javascript">
+  if (jQuery) (function() {
+    $.extend($.fn, {
+        scrollTo: function(cb) {
+            $('html, body').animate({
+                scrollTop: (parseInt($(this).offset().top) - 72)
+            }, 500, cb);
+        }
+      });
+  })(jQuery);
+  </script>
 </body>
 </html>
