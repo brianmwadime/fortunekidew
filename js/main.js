@@ -6,18 +6,14 @@ $(function() {
     MBP.enableActive();
     MBP.preventZoom();
 
-    $("section.hero-centered span.typed").typed({
-        strings: ["instances", "droplets", "servers"],
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 700
-    });
+    // $("section.hero-centered span.typed").typed({
+    //     strings: ["instances", "droplets", "servers"],
+    //     typeSpeed: 50,
+    //     backSpeed: 30,
+    //     backDelay: 700
+    // });
 
     $("#slider").slippry();
-
-    if($("#pricing-section").length > 0 && window.location.hash && window.location.hash === "#pricing-section") {
-        $("#pricing-section").scrollTo();
-    }
 
     $("ul.slider").bxSlider({
         speed: 400,
@@ -31,21 +27,21 @@ $(function() {
         $(".simple-header nav").toggleClass("show");
     });
 
-    $(".simple-header nav a, #commando-servers, #sign-up, .scroll-to").not(".log-in, .api-docs, .pricing").on("click", function(e) {
-        e.preventDefault();
+    $(".simple-header nav a").not(".log-in, .pricing").on("click", function(e) {
+        // e.preventDefault();
 
         var id = $(this).attr("href");
         $(id).scrollTo();
     });
 
-    $(".log-in").on("click", function(e) {
-        var account_alias = $.cookie("commandoio_account_alias");
+    // $(".log-in").on("click", function(e) {
+    //     var account_alias = $.cookie("account_alias");
 
-        if(account_alias) {
-            e.preventDefault();
-            window.location = 'https://' + account_alias + '.commando.io';
-        }
-    });
+    //     if(account_alias) {
+    //         e.preventDefault();
+    //         window.location = 'https://' + account_alias + '.fortunekidew.co.ke';
+    //     }
+    // });
 
     $(".link-overview-video").on("click", function() {
         if(typeof ga !== "undefined") {
