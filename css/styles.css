@@ -1645,18 +1645,18 @@ label {
     -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset; }
   .btn-solid.btn-accent {
-    /*background: #53b2e5;
-    border-color: #53b2e5;*/
+    background: #8ac06e;
+    /*border-color: #53b2e5;*/
     color: #fff; }
     .btn-solid.btn-accent:hover, .btn-solid.btn-accent:focus {
-      background: #fff;
+      background: #0CB863;
       /*border-color: #69bce8;*/
-      color:#0CB863; }
+       }
     .btn-solid.btn-accent:active {
-      background: #fff;
+      background: #0CB863;
       /*border-color: #3da8e2;
       border-bottom-color: #53b2e5;*/
-      color: #0CB863; }
+       }
     .skeuo .btn-solid.btn-accent {
       background-color: #53b2e5;
       background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#53b2e5), to(#34a4e0));
