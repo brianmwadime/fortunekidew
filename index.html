@@ -193,7 +193,7 @@
     <div class="con">
       <header>
         <hgroup>
-          <h1 class="h-underline m-bottom">Services</h1>
+          <h1 class="h-underline m-bottom">SERVICES</h1>
         </hgroup>
       </header>
 
@@ -208,7 +208,7 @@
           <div class="cell">
             <i class="fa fa-credit-card icon-large highlight m-bottom" aria-hidden="true"></i>
             <p><strong class="highlight">E-commerce</strong></p>
-            <p>We help business and individuals integrate payment gateways <strong>(Pesapal, Paypal, Lipisha)</strong> into the webshops/online stores. Providing them with more revenue channels and there customers with a wider range of payment options from <strong>VIZA / MASTERCARD</strong> to <strong>MPESA</strong></p>
+            <p>We help business and individuals integrate payment gateways <strong>(Pesapal, Paypal, Lipisha)</strong> into the webshops/online stores. Providing them with more revenue channels and there customers with a wider range of payment options from <strong>VISA / MASTERCARD</strong> to <strong>MPESA</strong></p>
           </div>
 
           <div class="cell">
@@ -222,15 +222,16 @@
           <div class="cell">
             <i class="fa fa-hdd-o icon-large highlight m-bottom" aria-hidden="true"></i>
             <p><strong class="highlight">Responsive</strong></p>
-            <p>Take provide our clients with a competitive edge with customized web design that is adaptable to modern day technology. Our designs are created with function in mind and work on multiple user interfaces, including desktop and laptop screens of all sizes, tablets, and smartphones.</p>
+            <p>We provide our clients with a competitive edge with customized web design that is adaptable to modern day technology. Our designs are created with function in mind and work on multiple user interfaces, including desktop and laptop screens of all sizes, tablets, and smartphones.</p>
           </div>
 
           <div class="cell">
             <i class="fa fa-tree icon-large highlight m-bottom" aria-hidden="true"></i>
             <p><strong class="highlight">Farm Produce</strong></p>
             <p>We not only provide software solutions, we also produce horticulture products on our Farm.</p>
-            <p>Our Fortune Kidew Farm produces:</p>
-            <p>
+            <a class="team-links" href="farm.html"><strong class="highlight">Learn More</strong></a>
+            <!-- <p>Our Fortune Kidew Farm produces:</p> -->
+            <!-- <p>
               <ul class="list">
                 <li>Watermelons</li>
                 <li>Sweet potatoes</li>
@@ -239,7 +240,7 @@
                 <li>Kales</li>
                 <li>Sweet potatoes</li>
               </ul>
-            </p>
+            </p> -->
           </div>
         </div>
 
@@ -302,7 +303,7 @@
   <div id="contacts-section" class="green p-top p-bottom center">
     <div class="con">
       <header>
-      <h1 class="h-underline m-bottom">Get in touch.</h1>
+      <h1 class="h-underline m-bottom">GET IN TOUCH.</h1>
       <h2 class="h-big h-thin m-bottom" style="max-width: none;">We would love to hear from you and work on something together or deliver produce. </h2>
       </header>
       <div class="grid small-2 clearfix m-bottom">
@@ -441,17 +442,24 @@
 
   <script type="text/javascript" crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script type="text/javascript" crossorigin="anonymous" src="js/vendor.min.js"></script>
-  <script type="text/javascript" crossorigin="anonymous" src="js/main.js?v=33"></script>
+  <script type="text/javascript" crossorigin="anonymous" src="js/main.js?v=7"></script>
   <script type="text/javascript">
-  if (jQuery) (function() {
-    $.extend($.fn, {
-        scrollTo: function(cb) {
-            $('html, body').animate({
-                scrollTop: (parseInt($(this).offset().top) - 72)
-            }, 500, cb);
-        }
-      });
-  })(jQuery);
+    if (jQuery) (function() {
+      $.extend($.fn, {
+          scrollTo: function(cb) {
+              $('html, body').animate({
+                  scrollTop: (parseInt($(this).offset().top) - 72)
+              }, 500, cb);
+          }
+        });
+    })(jQuery);
+
+    $(".simple-header nav a").not(".log-in, .pricing").on("click", function(e) {
+      e.preventDefault();
+
+      var id = $(this).attr("href");
+      $(id).scrollTo();
+    });
   </script>
 </body>
 </html>
