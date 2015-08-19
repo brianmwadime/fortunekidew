@@ -38,13 +38,26 @@
   <script type="text/javascript" crossorigin="anonymous" src="js/html5.3.7.2.js"></script>
   <![endif]-->
 
-  <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911%7CRaleway:400,300,500,700%7COpen+Sans:400italic,400&subset=latin,latin,latin" rel="stylesheet" type="text/css">
-
   <link rel="stylesheet" href="css/slippry.css?v=6">
 
   <link rel="stylesheet" href="css/styles.css?v=6">
 
   <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: ['Raleway:400,300,500,700:latin', 'Open+Sans:400italic,400:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+  </script>
 
   <script type="text/javascript" crossorigin="anonymous" src="js/modernizr.2.8.3.min.js"></script>
 
@@ -79,14 +92,14 @@
 
       <i aria-hidden="true" data-icon="&#xe086;" class="menu-trigger btn-hollow btn-subdue" id="menu-trigger"></i>
 
-      <nav>
-        <a href="index.html#home-section">HOME</a>
-        <a href="farm.html">THE FARM</a>
-        <a href="index.html#services-section">SERVICES</a>
-        <a href="index.html#team-section">TEAM</a>
-        <a href="#about-section">ABOUT</a>
-        <a class="divider">&nbsp;</a>
-        <a href="index.html#contacts-section">CONTACT US</a>
+      <nav id="top-menu">
+         <span><a href="#home-section">HOME</a></span>
+        <span><a class="the-farm" href="farm.html">THE FARM</a></span>
+        <span><a href="#services-section">SERVICES</a></span>
+        <span><a href="#team-section">TEAM</a></span>
+        <span><a href="#about-section">ABOUT</a></span>
+        <span><a class="divider">&nbsp;</a></span>
+        <span><a href="#contacts-section">CONTACT US</a></span>
 
         
 
@@ -158,7 +171,7 @@
             <ul>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="farm.html">The Farm</a></li>
+                <li><a class="the-farm" href="farm.html">The Farm</a></li>
                 <li><a href="mailto:info@fortunekidew.co.ke">Contact</a></li>
             </ul>
         </nav>

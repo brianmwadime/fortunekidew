@@ -1859,7 +1859,7 @@ hr.chiseled {
       text-transform: uppercase;
       letter-spacing: 1px; }
       .simple-header nav a:hover, .simple-header nav a:visited:hover {
-        color: #fff; }
+        color: #31343c; }
     @media (min-width: 1120px) {
       .simple-header nav {
         display: block;
@@ -1884,11 +1884,11 @@ hr.chiseled {
     .simple-header.neutral nav a:active, .simple-header.neutral nav a:visited:active {
       background: #fcfdfd;
       color: #31343c; }
-  .simple-header.white nav a, .simple-header.neutral nav a:visited {
+  .simple-header.white nav a, .simple-header.neutral nav > a:visited {
     color: #858b9b; }
-    .simple-header.white nav a:hover, .simple-header.neutral nav a:visited:hover {
+    .simple-header.white nav > a:hover, .simple-header.neutral nav > a:visited:hover {
       color: #31343c; }
-    .simple-header.white nav a:active, .simple-header.neutral nav a:visited:active {
+    .simple-header.white nav > a:active, .simple-header.neutral nav > a:visited:active, .menu-active {
       background: #fcfdfd;
       color: #31343c; }
 
@@ -2375,53 +2375,23 @@ h1 span.typed {
   100% {
     opacity: 1; } }
 
-#tools-section i {
-    font-size: 5rem;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-#tools-section a {
-    color: #777B87;
-}
-
-#tools-section a:hover {
-    color: #777B87;
-    text-decoration: none;
-}
-
+#tools-section i {font-size: 5rem;display: block; margin-bottom: 1rem;}
+#tools-section a {color: #777B87;}
+#tools-section a:hover {color: #777B87;text-decoration: none;}
 /*CUSTOM CSS*/
-.img-circular{
- width: 200px;
- height: 200px;
- text-align: center;
- background-size: cover;
- margin:10px auto;
- border-radius: 100px;
- -webkit-border-radius: 100px;
- -moz-border-radius: 100px;
-}
-
+.img-circular{width: 200px; height: 200px; text-align: center; background-size: cover; margin:10px auto; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px;}
 .team-links{margin:20px auto; color:#28CB75;display: block;}/*#8AC06E*/
 .margin10{margin:10px auto;}
 .margin20{margin:20px auto;}
-.taglineWrapper {
-  margin:0px auto;
-  text-align:center;
-  font-weight:300;
-  line-height:40px;
-}
-.mainTitle {
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.top_content{
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+.taglineWrapper { margin:0px auto; text-align:center; font-weight:300; line-height:40px;}
+.mainTitle {font-size: 20px;text-transform: uppercase;letter-spacing: 1px;}
+.top_content{ width: 100%; margin: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.simple-header nav .menu-active a{  color: #31343c; }
+.boxInfo { font-size: 11px;font-style: italic;font-family: "Open Sans",sans-serif;font-weight: 400;letter-spacing: 0px;padding: 2px 50px 0px;line-height: 15px;}
+.grow {display: inline-block; transition-duration: 0.3s;transition-property: transform;transform: translateZ(0px);box-shadow: 0px 0px 1px transparent;}
+.grow:hover, .grow:focus, .grow:active { transform: scale(1.1);}
+.box{width: 25%;float: left;text-align: center;letter-spacing: 3px;padding: 55px 0px 25px;height: 220px;font-family: "Raleway",sans-serif;font-size: 13px;font-weight: 700;line-height: 16px;}
+.box img {max-width: 210px;margin-bottom: 10px;width: 60%; height: 70%; max-height: 272px;}
+.drops{background-color: #28CB75;}
+.angawa{background-color: #885EAD;}
+.radarmodels{background-color: #e5e5e5;}

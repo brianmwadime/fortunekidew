@@ -38,12 +38,27 @@
   <script type="text/javascript" crossorigin="anonymous" src="js/html5.3.7.2.js"></script>
   <![endif]-->
 
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300" rel="stylesheet" type="text/css"> -->
-<link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911%7CRaleway:400,300,500,700%7COpen+Sans:400italic,400&subset=latin,latin,latin" rel="stylesheet" type="text/css">
+ 
   <link rel="stylesheet" href="css/styles.css?v=7">
   <link rel="stylesheet" href="css/bxslider.css?v=7">
 
   <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: ['Raleway:400,300,500,700:latin', 'Open+Sans:400italic,400:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+  </script>
+
   <script type="text/javascript" crossorigin="anonymous" src="js/modernizr.2.8.3.min.js"></script>
 
   <script type="text/javascript">
@@ -77,14 +92,14 @@
 
       <i aria-hidden="true" data-icon="&#xe086;" class="menu-trigger btn-hollow btn-subdue" id="menu-trigger"></i>
 
-      <nav>
-        <a href="#home-section">HOME</a>
-        <a href="farm.html">THE FARM</a>
-        <a href="#services-section">SERVICES</a>
-        <a href="#team-section">TEAM</a>
-        <a href="#about-section">ABOUT</a>
-        <a class="divider">&nbsp;</a>
-        <a href="#contacts-section">CONTACT US</a>
+      <nav id="top-menu">
+        <span><a href="#home-section">HOME</a></span>
+        <span><a class="the-farm" href="farm.html">THE FARM</a></span>
+        <span><a href="#services-section">SERVICES</a></span>
+        <span><a href="#team-section">TEAM</a></span>
+        <span><a href="#about-section">ABOUT</a></span>
+        <span><a class="divider">&nbsp;</a></span>
+        <span><a href="#contacts-section">CONTACT US</a></span>
 
         
 
@@ -255,6 +270,39 @@
       </div> <!-- close grid -->
     </div> <!-- close container -->
   </section> <!-- close how it works -->
+
+  <section id="portfolio-section" class="center">
+  <div class="box">
+      <img src="images/projects/angawa.png" alt="Ang'awa Adero" class="grow"><br>
+        angawaadero.co.ke<br>
+        <div class="boxInfo" style="color:#885EAD">Web Design / Development</div>
+  </div>
+  <div class="box" style="background-color:#5cf9a6;">
+      <img src="images/projects/drops.png" alt="Drops Windows Phone" class="grow"><br>
+        Drops Windows Phone<br>
+        <div class="boxInfo" style="color:#fffff">Design / C# Development</div>
+  </div>
+  <div class="box" style="background-color:#BDCBB6;">
+      <img src="images/projects/deusol.png" alt="deusolandorra.com" class="grow"><br>
+        deusolandorra.com<br>
+        <div class="boxInfo" style="color:#535C4F"> Joomla CMS / Templates / Extensions</div>
+  </div>
+  <div class="box radarmodels">
+      <img src="images/projects/enecoru.png" alt="eneco.ru" class="grow"><br>
+        eneco.ru<br>
+        <div class="boxInfo" style="color:#885EAD">Design / WordPress CMS / Plugins</div>
+  </div>
+  <div class="box radarmodels">
+      <img src="images/projects/pesapalmagento.png" alt="Pesapal Magento" class="grow"><br>
+        PesaPal Magento<br>
+        <div class="boxInfo" style="color:#885EAD">Magento / Extensions</div>
+  </div>
+  <div class="box" style="background-color:#778472;">
+      <img src="images/projects/radarmodels.png" alt="radarmodels.com" class="grow"><br>
+        radarmodels.com<br>
+        <div class="boxInfo" style="color:#ffffff">CMS / Extensions</div>
+  </div>
+  </section>
 
   <section id="team-section" class="white center p-top p-bottom">
     <div class="con">
@@ -435,7 +483,7 @@
             <ul>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="farm.html">The Farm</a></li>
+                <li><a class="the-farm" href="farm.html">The Farm</a></li>
                 <li><a href="mailto:info@fortunekidew.co.ke">Contact</a></li>
             </ul>
         </nav>
@@ -456,13 +504,6 @@
           }
         });
     })(jQuery);
-
-    $(".simple-header nav a").not(".log-in, .pricing").on("click", function(e) {
-      e.preventDefault();
-
-      var id = $(this).attr("href");
-      $(id).scrollTo();
-    });
   </script>
 </body>
 </html>
