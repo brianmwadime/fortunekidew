@@ -48,7 +48,7 @@ audio:not([controls]) {
  *    user zoom.
  */
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -438,7 +438,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
@@ -1325,12 +1325,8 @@ h1.h-monster, h2.h-monster, h3.h-monster, h4.h-monster, h5.h-monster, h6.h-monst
   font-size: 40px;
   font-size: 2.5rem;
   line-height: 1.5; }
-h1.h-underline, h2.h-underline, h3.h-underline, h4.h-underline, h5.h-underline, h6.h-underline {
+.h-underline, .h-underline, .h-underline, .h-underline, .h-underline, .h-underline {
   display: inline-block;
-  font-weight: bold;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   padding: 0 0 7px 0;
   border-bottom: 2px solid; }
 h1.h-thin, h2.h-thin, h3.h-thin, h4.h-thin, h5.h-thin, h6.h-thin {
@@ -2409,3 +2405,23 @@ h1 span.typed {
 .team-links{margin:20px auto; color:#28CB75;display: block;}/*#8AC06E*/
 .margin10{margin:10px auto;}
 .margin20{margin:20px auto;}
+.taglineWrapper {
+  margin:0px auto;
+  text-align:center;
+  font-weight:300;
+  line-height:40px;
+}
+.mainTitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.top_content{
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
