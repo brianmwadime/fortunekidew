@@ -2395,16 +2395,7 @@ h1 span.typed {
 .drops{background-color: #28CB75;}
 .angawa{background-color: #885EAD;}
 .radarmodels{background-color: #e5e5e5;}
-
-@media screen and (max-width: 980px) {
-  .box {width: 33.33%;}
-
-}
-
-@media screen and (max-width:750px) {
-  .box {width: 50%;}
-}
-
-@media screen and (max-width:500px) {
-  .box {width: 100%;}
-}
+@media screen and (max-width: 980px) {box {width: 33.33%;}}
+@media screen and (max-width:750px) {.box {width: 50%;}}
+@media screen and (max-width:500px) {.box {width: 100%;}}
+.contact-icons{display: inline-block;vertical-align: middle;margin-right: 10px;}
