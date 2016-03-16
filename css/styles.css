@@ -78,6 +78,7 @@ a:focus {
  */
 a:active,
 a:hover {
+  text-decoration: none;
   outline: 0; }
 
 /* ==========================================================================
@@ -1350,9 +1351,9 @@ p.big, span.big, small.big, address.big, strong.big {
 
 a, a:visited {
   text-decoration: none;
-  color: #53b2e5; }
+  /*color: #53b2e5;*/ }
   a:hover, a:visited:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
 
 @font-face {
   font-family: 'entypo';
