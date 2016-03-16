@@ -1351,7 +1351,7 @@ p.big, span.big, small.big, address.big, strong.big {
 
 a, a:visited {
   text-decoration: none;
-  /*color: #53b2e5;*/ }
+  color: #222222; }
   a:hover, a:visited:hover {
     text-decoration: none; }
 
