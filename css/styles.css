@@ -64,6 +64,9 @@ body {
 /* ==========================================================================
    Links
    ========================================================================== */
+a {
+  text-decoration: none;
+}
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
