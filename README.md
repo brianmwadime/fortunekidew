@@ -1,1 +1,1 @@
-# Our Website Source located at https://fortunekidew.co.ke
+# Website Source located at https://fortunekidew.co.ke
